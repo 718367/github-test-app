@@ -1,4 +1,4 @@
-
+#include "rectangel.h"
 #include <iostream>
 using namespace std;
 
@@ -7,7 +7,20 @@ void expand(int arr[], int size);
 
 int main()
 {
-    int size = 3;
+    rectangel rec1(2.0,3.0);
+    rectangel rec2(3.0, 4.0);
+    if (rec1.get_area() > rec2.get_area())
+        cout << "rec1 is larger." << endl;
+    else if (rec1.get_area() < rec2.get_area())
+        cout << "rec2 is larger." << endl;
+    else
+        cout << "Both are equal." << endl;
+    cout << "Area of rec1: " << rec1.get_area() << endl;
+    cout << "Area of rec1: " << rec2.get_area() << endl;
+
+    
+
+   /* int size = 3;
     int* arr = new int[size];
     bool  Continue =1;
     while(Continue){
@@ -22,7 +35,7 @@ int main()
         cin >> Continue;
     }
         
-   
+   */
 }
 
 void expand(int arr[], int size) {
