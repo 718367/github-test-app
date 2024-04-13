@@ -128,6 +128,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="github test app.cpp" />
+    <ClCompile Include="rectangel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rectangel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
