@@ -1,19 +1,23 @@
+#ifndef RECTANGEL_H
+#define RECTANGEL_H
 
+template<typename T>
 class rectangel {
 private:
-    float height;
-    float width;
+    T height;
+    T width;
 
 public:
-    rectangel();
-    rectangel(float w, float h);
-    float get_width();
-    float get_height();
-    void set_width(float w);
-    void set_height(float h);
-    float get_area();
-
+    rectangel(void);
+    rectangel(T w, T h);
+    T get_width(void);
+    T get_height(void);
+    void set_width(T w);
+    void set_height(T h);
+    T get_area(void);
 };
 
+ 
 
+#endif // RECTANGEL_H
 

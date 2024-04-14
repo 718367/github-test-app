@@ -1,4 +1,5 @@
 #include "rectangel.h"
+#include "rectangel.cpp"
 #include <iostream>
 using namespace std;
 
@@ -7,8 +8,10 @@ void expand(int arr[], int size);
 
 int main()
 {
-    rectangel rec1(2.0,3.0);
-    rectangel rec2(3.0, 4.0);
+    rectangel<int> rec1;
+    rec1.set_width(5);
+    rec1.set_height(2);
+    rectangel<float> rec2(3.0, 4.0);
     if (rec1.get_area() > rec2.get_area())
         cout << "rec1 is larger." << endl;
     else if (rec1.get_area() < rec2.get_area())
@@ -16,7 +19,7 @@ int main()
     else
         cout << "Both are equal." << endl;
     cout << "Area of rec1: " << rec1.get_area() << endl;
-    cout << "Area of rec1: " << rec2.get_area() << endl;
+    cout << "Area of rec2: " << rec2.get_area() << endl;
 
     
 

@@ -1,27 +1,36 @@
 #include "rectangel.h"
 
-rectangel::rectangel() : width(0), height(0) {}
+template<typename T>
+rectangel<T>::rectangel(void) : width(0), height(0) {}
 
-rectangel::rectangel(float w, float h) : width(w), height(h) {}
+template<typename T>
+rectangel<T>::rectangel(T w, T h) : width(w), height(h) {}
 
-float rectangel::get_width() {
+template<typename T>
+T rectangel<T>::get_width(void) {
     return width;
 }
 
-float rectangel::get_height() {
+template<typename T>
+T rectangel<T>::get_height(void) {
     return height;
 }
 
-void rectangel::set_width(float w) {
+template<typename T>
+void rectangel<T>::set_width(T w) {
     width = w;
 }
 
-void rectangel::set_height(float h) {
+template<typename T>
+void rectangel<T>::set_height(T h) {
     height = h;
 }
 
-float rectangel::get_area() {
+template<typename T>
+T rectangel<T>::get_area(void) {
     return width * height;
 }
 
-
+template class rectangel<int>;
+template class rectangel<double>;
+template class rectangel<float>;
